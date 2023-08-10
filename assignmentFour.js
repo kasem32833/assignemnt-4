@@ -1,30 +1,23 @@
-// Problem One
+
 
 function cubeNumber(number){
     let result;
     if(typeof number !== 'number'){
         return 'Please input a valid number'
     }else{
-        // result = number * number * number
-
-       
+        result = number * number * number
     }
     return result;
 }
 
-// Problem Two
+
 
  function matchFinder(string1, string2){
     if(typeof string1 !== 'string' || typeof string2 !== 'string'){
-        // console.log(string1, string2)
         return 'Please make sure both arguments are string'
     }else{
         let stringArr = [];
-        stringArr = string1.split(' ')
-        // console.log(stringArr);
-
-        // console.log(stringArr.indexOf(string2));
-
+        stringArr = string1.split(' ');
        if( stringArr.indexOf(string2) === -1 ){
         return false
        }else{
@@ -35,7 +28,7 @@ function cubeNumber(number){
 
 
 
-// Problem Three
+
 
 function sortMaker(arr){
     let newArr = []
@@ -54,7 +47,7 @@ function sortMaker(arr){
     return newArr
 }
 
-// Problem Four
+
 
 function findAddress(obj){
 
@@ -84,12 +77,12 @@ function findAddress(obj){
     return addressString;
 }
 
-// Problem Five
+
 
 function canPay(changeArray, totalDue){
 
     if(changeArray.length === 0){
-        return 'I dont have mone now'
+        return 'I dont have money now'
     }
     let totalMoney =0;
 
